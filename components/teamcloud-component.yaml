@@ -4,7 +4,7 @@ metadata:
   name: TeamCloud
   description: The TeamCloud component
   annotations:
-    github.com/project-slug: 'microsoft/teamcloud'
+    github.com/project-slug: 'microsoft/TeamCloud'
 spec:
   type: service
   lifecycle: production

@@ -5,4 +5,4 @@ metadata:
   description: A collection of all test components
 spec:
   targets:
-    - ./components/test-component.yaml
+    - ./components/test-thing.yaml

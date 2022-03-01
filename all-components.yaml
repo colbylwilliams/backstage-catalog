@@ -6,3 +6,4 @@ metadata:
 spec:
   targets:
     - ./components/test-thing.yaml
+    - ./components/teamcloud-component.yaml

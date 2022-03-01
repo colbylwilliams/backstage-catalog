@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: TeamCloud
+  description: The TeamCloud component
+  annotations:
+    github.com/project-slug: 'microsoft/teamcloud'
+spec:
+  type: service
+  lifecycle: production
+  owner: user:guest

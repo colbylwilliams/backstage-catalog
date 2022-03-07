@@ -51,3 +51,11 @@ spec:
       action: fetch:plain
       input:
         url: ./azuredeploy.json
+        targetPath: ./deploy
+
+    - id: debug-log
+      name: Debug Log
+      action: debug:log
+      input:
+        message: Hello World
+        listWorkspace: true

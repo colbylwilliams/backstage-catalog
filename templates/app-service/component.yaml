@@ -15,9 +15,9 @@ metadata:
 # set the component description
 # description: ./readme.md
 
-configuration:
-  # Set the component isolation level
-  isolation: ResourceGroup
+# configuration:
+#   # Set the component isolation level
+#   isolation: ResourceGroup
 
 spec:
   parameters:

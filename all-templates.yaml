@@ -5,4 +5,5 @@ metadata:
   description: A collection of software templates
 spec:
   targets:
+    - ./templates/app-service/component.yaml
     - ./templates/function-app/component.yaml

@@ -51,20 +51,3 @@ spec:
       action: fetch:plain
       input:
         url: ./azuredeploy.json
-# tasks:
-
-#   - id: reset
-#     name: Reset
-#     description: Reset the component to its original state.
-
-#   - id: clear
-#     name: Clear
-#     description: Delete all resources, but keep the component alive.
-
-# taskRunner:
-#   id: teamcloud/tcrunner-arm
-
-# permissions:
-
-#   - role: owner
-#     permission: Contributor

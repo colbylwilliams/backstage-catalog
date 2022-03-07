@@ -1,0 +1,45 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+
+metadata:
+  name: sonarqube-wa
+  title: SonarQube WA
+  description: ./readme.md
+  tags:
+    - azure
+    - environment
+
+spec:
+  owner: group:backstage-admins
+  type: service
+  parameters:
+    - title: New Sonar Qube instance
+      description: Options for creating the instance
+      type: object
+      required:
+        - adminUsername
+        - adminPassword
+      properties:
+        adminUsername;:
+          name: Admin Username
+          type: string
+          required: true
+          default: coder
+        adminPassword:
+          name: Admin Password
+          type: string
+          required: true
+  steps:
+    - id: fetch-deploy
+      name: Fetch Deploy
+      action: fetch:plain
+      input:
+        url: ./
+        targetPath: ./deploy
+
+    - id: debug-log
+      name: Debug Log
+      action: debug:log
+      input:
+        message: Hello World
+        listWorkspace: true

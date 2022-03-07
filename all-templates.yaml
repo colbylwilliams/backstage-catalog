@@ -7,3 +7,8 @@ spec:
   targets:
     - ./templates/app-service/component.yaml
     - ./templates/function-app/component.yaml
+    - ./templates/microservice-csharp/component.yaml
+    - ./templates/playground/component.yaml
+    - ./templates/sonarqubeVM/component.yaml
+    - ./templates/sonarqubeWA/component.yaml
+    - ./templates/visualstudio2019/component.yaml

@@ -1,0 +1,43 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+
+metadata:
+  name: sonarqube-vm
+  title: SonarQube VM
+  description: ./readme.md
+  tags:
+    - azure
+    - environment
+
+configuration:
+  # Set the component isolation level
+  isolation: ResourceGroup
+
+spec:
+  owner: group:backstage-admins
+  type: service
+  parameters:
+    - title: New Sonar Qube instance
+      description: Options for creating the instance
+      type: object
+      required:
+        - sonarqubePassword
+      properties:
+        sonarqubePassword:
+          name: SonarQube Password
+          type: string
+          required: true
+  steps:
+    - id: fetch-deploy
+      name: Fetch Deploy
+      action: fetch:plain
+      input:
+        url: ./
+        targetPath: ./deploy
+
+    - id: debug-log
+      name: Debug Log
+      action: debug:log
+      input:
+        message: Hello World
+        listWorkspace: true

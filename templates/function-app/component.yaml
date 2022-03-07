@@ -51,11 +51,11 @@ spec:
           type: boolean
           default: true
   steps:
-    - id: fetch-arm
-      name: Fetch Base
+    - id: fetch-deploy
+      name: Fetch Deploy
       action: fetch:plain
       input:
-        url: ./azuredeploy.json
+        url: ./
         targetPath: ./deploy
 
     - id: debug-log

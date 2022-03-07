@@ -1,4 +1,4 @@
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 
 metadata:
@@ -45,6 +45,12 @@ spec:
           title: HTTPS only
           type: boolean
           default: true
+  steps:
+    - id: fetch-arm
+      name: Fetch Base
+      action: fetch:plain
+      input:
+        url: ./azuredeploy.json
 # tasks:
 
 #   - id: reset

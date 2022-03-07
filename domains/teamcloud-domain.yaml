@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: teamcloud
+  description: Everything related to TeamCloud
+spec:
+  owner: group:backstage-admins

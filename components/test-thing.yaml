@@ -8,4 +8,6 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: user:guest
+  owner: group:backstage-admins
+  # allowGroups:
+# Substitutions: https://backstage.io/docs/features/software-catalog/descriptor-format#substitutions-in-the-descriptor-format

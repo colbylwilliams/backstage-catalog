@@ -9,6 +9,10 @@ metadata:
     - azure
     - environment
 
+spec:
+  owner: group:backstage-admins
+  type: service
+
   parameters:
     - title: New Function App
       description: Options for creating a Function App

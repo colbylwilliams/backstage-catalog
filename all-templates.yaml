@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: Location
 metadata:
-  name: custom-templates
-  description: A collection of software templates
+  name: all-templates
+  description: A collection of all software templates
 spec:
   targets:
     - ./templates/app-service/component.yaml

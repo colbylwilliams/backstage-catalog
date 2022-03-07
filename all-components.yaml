@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: Location
 metadata:
-  name: test-components
-  description: A collection of all test components
+  name: all-components
+  description: A collection of all components
 spec:
   targets:
     - ./components/test-thing.yaml

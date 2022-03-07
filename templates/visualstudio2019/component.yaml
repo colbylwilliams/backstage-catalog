@@ -4,7 +4,7 @@ kind: Template
 metadata:
   name: visualstudio-2019
   title: VisualStudio 2019
-  description: ./readme.md
+  description: This template provisions a function app on a Consumption plan, which is a dynamic hosting plan. The app runs on demand and you aree billed per execution, with no standing resource committment.
   tags:
     - azure
     - environment

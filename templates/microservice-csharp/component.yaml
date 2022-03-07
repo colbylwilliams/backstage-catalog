@@ -4,7 +4,7 @@ kind: Template
 metadata:
   name: microservice-csharp
   title: Microservice C#
-  description: ./readme.md
+  description: Create a new repository with a C# microservice sample project
   tags:
     - azure
     - environment

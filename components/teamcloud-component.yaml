@@ -9,6 +9,6 @@ spec:
   type: service
   lifecycle: production
   system: teamcloud
-  owner: group:backstage-admins
+  owner: group:teamcloud-admins
   providesApis:
     - teamcloud

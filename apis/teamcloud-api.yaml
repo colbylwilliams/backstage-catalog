@@ -17,6 +17,6 @@ spec:
   type: openapi
   lifecycle: production
   system: teamcloud
-  owner: group:backstage-admins
+  owner: group:teamcloud-admins
   definition:
     $text: https://github.com/microsoft/TeamCloud/blob/main/openapi/openapi.yaml

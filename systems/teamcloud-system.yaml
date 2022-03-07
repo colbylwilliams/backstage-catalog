@@ -4,5 +4,5 @@ metadata:
   name: teamcloud
   description: TeamCloud
 spec:
-  owner: group:backstage-admins
+  owner: group:teamcloud-admins
   domain: teamcloud

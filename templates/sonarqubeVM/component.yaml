@@ -9,10 +9,6 @@ metadata:
     - azure
     - environment
 
-configuration:
-  # Set the component isolation level
-  isolation: ResourceGroup
-
 spec:
   owner: group:backstage-admins
   type: service

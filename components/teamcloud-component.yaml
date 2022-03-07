@@ -8,4 +8,7 @@ metadata:
 spec:
   type: service
   lifecycle: production
+  system: teamcloud
   owner: group:backstage-admins
+  providesApis:
+    - teamcloud

@@ -7,6 +7,9 @@ metadata:
     - rest
     - teamcloud
   links:
+    - url: https://github.com/microsoft/TeamCloud
+      title: GitHub Repo
+      icon: github
     - url: https://github.com/microsoft/TeamCloud/releases/latest/download/openapi.yaml
       title: Source Code
       icon: code

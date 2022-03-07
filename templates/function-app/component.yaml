@@ -4,6 +4,7 @@ kind: Template
 metadata:
   name: azure-function-app
   title: Azure Function App
+  description: This template provisions a function app on a Consumption plan, which is a dynamic hosting plan. The app runs on demand and you are billed per execution, with no standing resource committment.
 # type: Environment
 # description: ./readme.md
 
@@ -16,7 +17,7 @@ spec:
 
   parameters:
     - title: New Function App
-      description: 'foo'
+      description: Options for creating a Function App
       type: object
       required:
         - functionAppRuntime

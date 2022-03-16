@@ -9,6 +9,6 @@ metadata:
     msft.dev/project-slug: 'project-omega'
     msft.dev/resource-type: 'codespace'
 spec:
-  type: service
+  type: codespace
   lifecycle: production
   owner: colbyw_microsoft.com

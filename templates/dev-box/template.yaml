@@ -87,44 +87,46 @@ spec:
           project: ${{ parameters.project }}
           owner: ${{ parameters.owner }}
 
-    # - id: publish
-    #   name: Publish
-    #   action: publish:github
-    #   input:
-    #     allowedHosts:
-    #       - github.com
-    #     description: This is ${{ parameters.component_id }}
-    #     repoUrl: ${{ parameters.repoUrl }}
-
     - id: publish
       name: Publish
-      action: publish:github:pull-request
+      action: publish:github
       input:
-        # repoUrl: ${{ parameters.repoUrl }}
-        repoUrl: github.com?repo=backstage-catalog&owner=colbylwilliams
-        title: 'Create new Dev Box: ${{parameters.component_id}}'
-        branchName: create-${{parameters.component_id}}
-        description: |
-          # New Dev Box: ${{parameters.component_id}}
-          ${{ parameters.description if parameters.description }}
-        targetPath: dev-boxes/${{ parameters.component_id }}
+        allowedHosts:
+          - github.com
+        description: This is ${{ parameters.component_id }}
+        repoUrl: ${{ parameters.repoUrl }}
         token: ${{ secrets.USER_OAUTH_TOKEN }}
+        defaultBranch: main
 
-    # - id: register
-    #   name: Register
-    #   action: catalog:register
+    # - id: publish
+    #   name: Publish
+    #   action: publish:github:pull-request
     #   input:
-    #     repoContentsUrl: ${{ steps.publish.output.repoContentsUrl }}
-    #     catalogInfoPath: '/catalog-info.yaml'
+    #     # repoUrl: ${{ parameters.repoUrl }}
+    #     repoUrl: github.com?repo=backstage-catalog&owner=colbylwilliams
+    #     title: 'Create new Dev Box: ${{parameters.component_id}}'
+    #     branchName: create-${{parameters.component_id}}
+    #     description: |
+    #       # New Dev Box: ${{parameters.component_id}}
+    #       ${{ parameters.description if parameters.description }}
+    #     targetPath: dev-boxes/${{ parameters.component_id }}
+    #     token: ${{ secrets.USER_OAUTH_TOKEN }}
 
-  output:
-    links:
-      - url: ${{steps.publish.output.remoteUrl}}
-        text: 'Go to PR'
+    - id: register
+      name: Register
+      action: catalog:register
+      input:
+        repoContentsUrl: ${{ steps.publish.output.repoContentsUrl }}
+        catalogInfoPath: '/catalog-info.yaml'
+
   # output:
   #   links:
-  #     - title: Repository
-  #       url: ${{ steps.publish.output.remoteUrl }}
-  #     - title: Open in catalog
-  #       icon: catalog
-  #       entityRef: ${{ steps.register.output.entityRef }}
+  #     - url: ${{steps.publish.output.remoteUrl}}
+  #       text: 'Go to PR'
+  output:
+    links:
+      - title: Repository
+        url: ${{ steps.publish.output.remoteUrl }}
+      - title: Open in catalog
+        icon: catalog
+        entityRef: ${{ steps.register.output.entityRef }}

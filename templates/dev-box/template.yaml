@@ -107,7 +107,7 @@ spec:
         description: |
           # New Dev Box: ${{parameters.component_id}}
           ${{ parameters.description if parameters.description }}
-        targetPath: dev-boxes/${{ parameters.component_id }}
+        targetPath: ${{ parameters.component_id }}
         token: ${{ secrets.USER_OAUTH_TOKEN }}
 
     # - id: register

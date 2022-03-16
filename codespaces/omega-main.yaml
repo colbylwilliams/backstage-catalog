@@ -5,9 +5,9 @@ metadata:
   title: Omega Main
   description: Codespace
   annotations:
-    msft.dev/org-slug: 'contoso'
-    msft.dev/project-slug: 'project-omega'
-    msft.dev/resource-type: 'codespace'
+    msft.dev/org-slug: contoso
+    msft.dev/project-slug: project-omega
+    msft.dev/resource-type: codespace
 spec:
   type: codespace
   lifecycle: production

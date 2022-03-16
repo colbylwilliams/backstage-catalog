@@ -6,7 +6,7 @@ metadata:
 spec:
   targets:
     - ./templates/app-service/component.yaml
-    - ./templates/dev-box/component.yaml
+    - ./templates/dev-box/template.yaml
     - ./templates/function-app/component.yaml
     - ./templates/microservice-csharp/component.yaml
     - ./templates/playground/component.yaml

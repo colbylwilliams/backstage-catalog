@@ -4,10 +4,15 @@ metadata:
   name: kappa-frontend
   title: Kappa Frontend
   description: Dev Box
+  tags:
+    - 8-vCPU
+    - 32GB-RAM
+    - 512GB-Storage
+
   annotations:
-    msft.dev/org-slug: 'contoso'
-    msft.dev/project-slug: 'project-kappa'
-    msft.dev/resource-type: 'dev-box'
+    msft.dev/org-slug: contoso
+    msft.dev/project-slug: project-kappa
+    msft.dev/resource-type: dev-box
 spec:
   type: dev-box
   lifecycle: production

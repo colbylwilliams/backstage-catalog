@@ -5,9 +5,9 @@ metadata:
   title: Alpha Frontend
   description: Dev Box
   tags:
-    - 8-vCPU
-    - 32GB-RAM
-    - 512GB-Storage
+    - 8-vcpu
+    - 32gb-ram
+    - 512gb-storage
 
   annotations:
     msft.dev/org-slug: contoso

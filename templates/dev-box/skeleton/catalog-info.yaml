@@ -6,9 +6,9 @@ metadata:
   description: ${{values.description | dump}}
   {%- endif %}
   tags:
-    - 8-vCPU
-    - 32GB-RAM
-    - 512GB-Storage
+    - 8-vcpu
+    - 32gb-ram
+    - 512gb-storage
   annotations:
     github.com/project-slug: ${{values.destination.owner + "/" + values.destination.repo}}
     backstage.io/techdocs-ref: dir:.

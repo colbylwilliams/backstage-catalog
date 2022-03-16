@@ -1,7 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: Alpha Frontend
+  name: alpha-frontend
+  title: Alpha Frontend
   description: Dev Box
   annotations:
     msft.dev/org-slug: 'contoso'

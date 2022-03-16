@@ -1,7 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: Omega Main
+  name: omega-main
+  title: Omega Main
   description: Codespace
   annotations:
     msft.dev/org-slug: 'contoso'

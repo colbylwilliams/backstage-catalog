@@ -1,7 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: Kappa Main
+  name: kappa-main
+  title: Kappa Main
   description: Codespace
   annotations:
     msft.dev/org-slug: 'contoso'

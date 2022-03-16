@@ -102,12 +102,12 @@ spec:
       input:
         # repoUrl: ${{ parameters.repoUrl }}
         repoUrl: github.com?repo=backstage-catalog&owner=colbylwilliams
-        title: 'Create new Dev Box: ${{parameters.name}}'
-        branchName: create-${{parameters.name}}
+        title: 'Create new Dev Box: ${{parameters.component_id}}'
+        branchName: create-${{parameters.component_id}}
         description: |
-          # New Dev Box: ${{parameters.name}}
+          # New Dev Box: ${{parameters.component_id}}
           ${{ parameters.description if parameters.description }}
-        targetPath: dev-boxes/${{ parameters.name }}
+        targetPath: dev-boxes/${{ parameters.component_id }}
         token: ${{ secrets.USER_OAUTH_TOKEN }}
 
     # - id: register

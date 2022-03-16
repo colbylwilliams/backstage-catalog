@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Omega Main
+  description: Codespace
+  annotations:
+    msft.dev/org-slug: 'contoso'
+    msft.dev/project-slug: 'project-omega'
+    msft.dev/resource-type: 'codespace'
+spec:
+  type: service
+  lifecycle: production
+  owner: colbyw

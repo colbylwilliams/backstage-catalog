@@ -5,5 +5,10 @@ metadata:
   description: A collection of all components
 spec:
   targets:
-    - ./components/test-thing.yaml
-    - ./components/teamcloud-component.yaml
+    - ./dev-boxes/alpha-frontend.yaml
+    - ./dev-boxes/alpha-testing.yaml
+    - ./dev-boxes/kappa-frontend.yaml
+    - ./dev-boxes/omega-frontend.yaml
+    - ./codespaces/alpha-main.yaml
+    - ./codespaces/kappa-main.yaml
+    - ./codespaces/omega-main.yaml

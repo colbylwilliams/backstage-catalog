@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Omega Frontend
+  description: Dev Box
+  annotations:
+    msft.dev/org-slug: 'contoso'
+    msft.dev/project-slug: 'project-omega'
+    msft.dev/resource-type: 'dev-box'
+spec:
+  type: service
+  lifecycle: production
+  owner: colbyw

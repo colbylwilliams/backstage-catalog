@@ -97,6 +97,7 @@ spec:
         repoUrl: ${{ parameters.repoUrl }}
         token: ${{ secrets.USER_OAUTH_TOKEN }}
         defaultBranch: main
+        repoVisibility: public
 
     # - id: publish
     #   name: Publish
